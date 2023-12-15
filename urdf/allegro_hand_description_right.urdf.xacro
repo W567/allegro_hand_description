@@ -134,7 +134,7 @@ and one fixed link will be added for the tip. -->
         
 	</link>
   
-	<joint name="THJ0" type="revolute">
+	<joint name="THJ_0" type="revolute">
 	
     	<axis xyz="-1 0 0"/>
     	<limit effort="0" velocity="0" lower="${limit_0_t_low-joint_safety_margin}" upper="${limit_0_t_up-joint_safety_margin}" />
@@ -166,7 +166,7 @@ and one fixed link will be added for the tip. -->
 		</collision>    
 	</link>
   
-  	<joint name="THJ1" type="revolute">
+  	<joint name="THJ_1" type="revolute">
   	
     	<axis xyz="0 0 1"/>
      	<limit effort="0" velocity="0" lower="${limit_1_t_low+joint_safety_margin}" upper="${limit_1_t_up-joint_safety_margin}" />
@@ -201,7 +201,7 @@ and one fixed link will be added for the tip. -->
         
 	</link>
   
-  <joint name="THJ2" type="revolute">
+  <joint name="THJ_2" type="revolute">
   
 		<axis xyz="0 1 0"/>
 		<limit effort="0" velocity="0" lower="${limit_2_t_low+joint_safety_margin}" upper="${limit_2_t_up-joint_safety_margin}" />
@@ -234,7 +234,7 @@ and one fixed link will be added for the tip. -->
          
 	</link>
   
-	<joint name="THJ3" type="revolute">
+	<joint name="THJ_3" type="revolute">
     	<axis xyz="0 1 0"/>
      	<limit effort="0" velocity="0" lower="${limit_3_t_low+joint_safety_margin}" upper="${limit_3_t_up-joint_safety_margin}" />
     	<parent link="thu_link_2"/>
