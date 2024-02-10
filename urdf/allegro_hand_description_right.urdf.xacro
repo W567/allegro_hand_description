@@ -137,7 +137,7 @@ and one fixed link will be added for the tip. -->
 	<joint name="THJ_0" type="revolute">
 	
     	<axis xyz="-1 0 0"/>
-    	<limit effort="0" velocity="0" lower="${limit_0_t_low-joint_safety_margin}" upper="${limit_0_t_up-joint_safety_margin}" />
+    	<limit effort="0" velocity="1" lower="${limit_0_t_low-joint_safety_margin}" upper="${limit_0_t_up-joint_safety_margin}" />
     	<parent link="base_link"/>
     	<child link="thu_link_0"/>
     	<origin rpy="${finger_angle_r} ${finger_angle_p} ${finger_angle_y}" xyz="${offset_origin_x} ${offset_origin_y} ${offset_origin_z}"/>
@@ -169,7 +169,7 @@ and one fixed link will be added for the tip. -->
   	<joint name="THJ_1" type="revolute">
   	
     	<axis xyz="0 0 1"/>
-     	<limit effort="0" velocity="0" lower="${limit_1_t_low+joint_safety_margin}" upper="${limit_1_t_up-joint_safety_margin}" />
+     	<limit effort="0" velocity="1" lower="${limit_1_t_low+joint_safety_margin}" upper="${limit_1_t_up-joint_safety_margin}" />
     	<parent link="thu_link_0"/>
     	<child link="thu_link_1"/>
 		
@@ -204,7 +204,7 @@ and one fixed link will be added for the tip. -->
   <joint name="THJ_2" type="revolute">
   
 		<axis xyz="0 1 0"/>
-		<limit effort="0" velocity="0" lower="${limit_2_t_low+joint_safety_margin}" upper="${limit_2_t_up-joint_safety_margin}" />
+		<limit effort="0" velocity="1" lower="${limit_2_t_low+joint_safety_margin}" upper="${limit_2_t_up-joint_safety_margin}" />
 		<parent link="thu_link_1"/>
 		<child link="thu_link_2"/>
 		<origin xyz="0 0 ${link1_t_z}"/>
@@ -236,7 +236,7 @@ and one fixed link will be added for the tip. -->
   
 	<joint name="THJ_3" type="revolute">
     	<axis xyz="0 1 0"/>
-     	<limit effort="0" velocity="0" lower="${limit_3_t_low+joint_safety_margin}" upper="${limit_3_t_up-joint_safety_margin}" />
+     	<limit effort="0" velocity="1" lower="${limit_3_t_low+joint_safety_margin}" upper="${limit_3_t_up-joint_safety_margin}" />
     	<parent link="thu_link_2"/>
     	<child link="thu_link_3"/>
     	<origin xyz="0 0 ${link2_t_z}"/>
@@ -308,7 +308,7 @@ and one fixed link will be added for the tip. -->
   
   	<joint name="${j_prefix}_0" type="revolute">
     	<axis xyz="0 0 1"/>
-    	<limit effort="0" velocity="0" lower="${limit_0_low+joint_safety_margin}" upper="${limit_0_up-joint_safety_margin}" />
+    	<limit effort="0" velocity="1" lower="${limit_0_low+joint_safety_margin}" upper="${limit_0_up-joint_safety_margin}" />
     	<parent link="base_link"/>
     	<child link="${l_prefix}_0"/>
     	<origin rpy="${finger_angle_r} 0 0" xyz="${offset_origin_x} ${offset_origin_y} ${offset_origin_z}"/>
@@ -335,7 +335,7 @@ and one fixed link will be added for the tip. -->
   	</link>
   
   	<joint name="${j_prefix}_1" type="revolute">
-  		<limit effort="0" velocity="0" lower="${limit_1_low+joint_safety_margin}" upper="${limit_1_up-joint_safety_margin}" />
+  		<limit effort="0" velocity="1" lower="${limit_1_low+joint_safety_margin}" upper="${limit_1_up-joint_safety_margin}" />
     	<axis xyz="0 1 0"/>
     	<parent link="${l_prefix}_0"/>
     	<child link="${l_prefix}_1"/>
@@ -364,7 +364,7 @@ and one fixed link will be added for the tip. -->
   
   	<joint name="${j_prefix}_2" type="revolute">
     	<axis xyz="0 1 0"/>
-    	<limit effort="0" velocity="0" lower="${limit_2_low+joint_safety_margin}" upper="${limit_2_up-joint_safety_margin}" />
+    	<limit effort="0" velocity="1" lower="${limit_2_low+joint_safety_margin}" upper="${limit_2_up-joint_safety_margin}" />
     	<parent link="${l_prefix}_1"/>
     	<child link="${l_prefix}_2"/>
     	<origin xyz="0 0 ${link1_z}"/>
@@ -391,7 +391,7 @@ and one fixed link will be added for the tip. -->
   		
   	<joint name="${j_prefix}_3" type="revolute">
     	<axis xyz="0 1 0"/>
-    	<limit effort="0" velocity="0" lower="${limit_3_low+joint_safety_margin}" upper="${limit_3_up-joint_safety_margin}" />
+    	<limit effort="0" velocity="1" lower="${limit_3_low+joint_safety_margin}" upper="${limit_3_up-joint_safety_margin}" />
     	<parent link="${l_prefix}_2"/>
     	<child link="${l_prefix}_3"/>
     	<origin xyz="0 0 ${link2_z}"/>
